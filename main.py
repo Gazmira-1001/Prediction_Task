@@ -17,19 +17,19 @@ def home():
     return render_template('index.html')
 
 # prediction function
-def ValuePredictor(to_predict_list):
+def predict(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1, 6)
     loaded_model = pickle.load(open("model.pkl", "rb"))
     result = loaded_model.predict(to_predict)
     return result[0]
  
 @app.route('/result', methods = ['POST'])
-def result():
+def prediction_result():
     if request.method == 'POST':
         parameter_list = request.form.to_dict()
         parameter_list = list(parameter_list.values())
         parameter_list_pred = list(map(float, parameter_list))
-        result = ValuePredictor(parameter_list_pred)   
+        result = predict(parameter_list_pred)   
         print(result)    
         if int(result)== 1:
             prediction ='Bream'
