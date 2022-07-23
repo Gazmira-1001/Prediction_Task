@@ -1,0 +1,62 @@
+<html>
+  <style>
+    h3 {
+      color: blue;
+      font-family: verdana;
+      font-size: 200%;
+      text-align: right;
+    
+    }
+    .style_labels  {
+      color: rgb(22, 5, 5);
+      font-family: verdana;
+      font-size: 100%;
+      text-align: center;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .input-field {
+    margin-left: 3em;
+    padding: .5em;
+    margin-bottom: .5em;
+    align-content:center;
+    }
+    .buttonHolder{ text-align: right; }
+    </style>
+   <body style="background-color:hsla(9, 100%, 64%, 0.5);" >
+      <h3>Predict fish types</h3>
+      <div>
+         <form action="/result" method="POST" >
+          <div class="row">
+            <label for="weight" class="style_labels">Weight</label>
+            <input type="text" class="input-field" placeholder="weight of fish in Gram g" id="weight" name="weight"> 
+          </div>
+          <div class="row">
+            <label for="length1" class="style_labels">Length1</label>
+            <input type="text" class="input-field" placeholder="vertical length in cm"  id="length1" name="length1">
+          </div>
+          <div class="row">
+            <label for="length2" class="style_labels">Length2</label>
+            <input type="text"class="input-field" placeholder="diagonal length in cm"  id="length2" name="length2">
+          </div>
+          <div class="row">
+            <label for="length3" class="style_labels">Length3</label>
+            <input type="text" class="input-field" placeholder="cross length in cm" id="length3" name="length3">
+          </div>
+          <div class="row">
+            <label for="height" class="style_labels">Height</label>
+            <input type="text" class="input-field" id="height" placeholder="height in cm" name="height">
+          </div>
+          <div class="row">
+            <label for="width" class="style_labels">Width</label>
+            <input type="text" class="input-field" id="width" placeholder="diagonal width in cm" name="width"> 
+          </div>
+          <div class="buttonHolder">
+            <input type="submit" class="style_labels"  value="Submit">
+          </div>
+         </form>
+      </div>
