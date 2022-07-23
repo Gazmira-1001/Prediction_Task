@@ -1,4 +1,4 @@
-# Fish Market Datasert
+# Fish Market Dataset
 
 
 Dataset link: https://www.kaggle.com/aungpyaeap/fish-market
