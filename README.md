@@ -14,6 +14,3 @@ pip install -r requirements.txt
 ## Running
 python main.py 
 
-## Deployment
-
-The project is deployed in Heroku in the following link: [https://fishtype-prediction.herokuapp.com/] (#https://fishtype-prediction.herokuapp.com/) 
