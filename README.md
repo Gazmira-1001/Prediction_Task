@@ -15,7 +15,7 @@ pip install -r requirements.txt
 python main.py 
 
 ## Deployment
-This project is deployed in Heroku
+This project is deployed in Heroku https://fishtype-prediction.herokuapp.com/
 
 ## Files 
 - templates-> index.html contains the main html file where the user enters the data
